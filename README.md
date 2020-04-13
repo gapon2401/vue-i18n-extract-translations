@@ -53,7 +53,7 @@ Option        | Default    | Necessity  | Description
    
 ## Examples
 
-**Extract all missing translations to json locale files.**
+###Extract all missing translations to json locale files.
 
 ```bash
 yarn vue-i18n-extract-translations -v "./src/**/*.?(js|vue)" -l "./src/locales/"
@@ -61,7 +61,7 @@ yarn vue-i18n-extract-translations -v "./src/**/*.?(js|vue)" -l "./src/locales/"
 
 Paths can be absolute or relative.
 
-**Key-based format translations**
+###Key-based format translations
 
 By default script uses key-based format and extract dot strings as objects.
 
@@ -78,7 +78,7 @@ Generated json file will be:
     "single_message": "single_message"  
 }
 ```
-**Message format translations**
+###Message format translations
 
 Your locale strings probably looks like: `$t('Some long  message. Love you')`
 
@@ -106,7 +106,7 @@ Now all dots in the strings will be ignored:
 }
 ```
 
-**Combine key-based and message format**
+###Combine key-based and message format
 
 You may have both formats: `$t('header.message')`, `$t('header.another_message')`, `$t('Some long  message. Love you')`.
 
@@ -126,7 +126,7 @@ Result json:
 }
 ```
 
-**Default locale folder**
+###Default locale folder
 
 ```bash
 yarn vue-i18n-extract-translations -v "./src/**/*.?(js|vue)" -l "./src/locales/" --def-locale "fr_FR"
@@ -134,7 +134,7 @@ yarn vue-i18n-extract-translations -v "./src/**/*.?(js|vue)" -l "./src/locales/"
 
 If locale directory is empty, script will create it and save translations to fr_FR.json file:
 
-**Keep new translations empty**
+###Keep new translations empty
 
 If you don't want the values of new translations to be keys, use option `--fill`.
 
@@ -150,7 +150,7 @@ or not:
 yarn vue-i18n-extract-translations -v "./src/**/*.?(js|vue)" -l "./src/locales/" --fill "Translate me!" 
 ```
 
-**Save translations only to specified locales**
+###Save translations only to specified locales
 
 ```bash
 yarn vue-i18n-extract-translations -v "./src/**/*.?(js|vue)" -l "./src/locales/" --target "en_US" "ru_RU" 
