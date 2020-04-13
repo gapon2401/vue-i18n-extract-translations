@@ -1,6 +1,6 @@
 {
   "name": "vue-i18n-extract-translations",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Extract all translations of vue-i18n-extract to json files",
   "main": "./index.js",
   "files": [

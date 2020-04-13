@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const yargs = require('yargs');
 const argv = yargs.usage('Usage: vue-i18n-extract-translations -v <path_to_vue_files> -l <path_to_locales> [options]')
     .options({
