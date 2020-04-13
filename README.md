@@ -1,6 +1,8 @@
 <h1>vue-i18n-extract-translations</h1>
 
-`vue-i18n-extract-translations` allows you to get key-based and message locale strings from your *.vue and *.js files and save them to json files.
+[![NPM version][npm-image]][npm-url]
+
+`vue-i18n-extract-translations` allows you to get key-based and message locale strings from your `*.vue` and `*.js` files and save them to json files.
        
 Based on [vue-i18n-extract](https://www.npmjs.com/package/vue-i18n-extract) and used it functionality for collecting keys.
 
@@ -157,3 +159,6 @@ yarn vue-i18n-extract-translations -v "./src/**/*.?(js|vue)" -l "./src/locales/"
 ```
 
 This command will save translations only to en_US.json and ru_RU.json files. Nonexistent files will be created automatically.
+
+[npm-url]: https://www.npmjs.com/package/vue-i18n-extract-translations
+[npm-image]: https://img.shields.io/npm/v/vue-i18n-extract-translations
